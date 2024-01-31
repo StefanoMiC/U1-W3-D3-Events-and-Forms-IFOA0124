@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventi & Event listeners</title>
+</head>
+
+<body>
+    <main>
+        <h1>Eventi & Event listeners</h1>
+        <h4>EVENT LISTENERS POSSONO ESSERE APPLICATI IN 3 MODI:</h4>
+        <ol>
+            <li>Inserimento tramite attributo di evento:
+                <button onclick="handleButtonClickFromAttribute(event)">button click1</button>
+                <!-- !!! ATTENZIONE !!! le parentesi in questo caso non identificano l'esecuzione della funzione!!! -->
+                <!-- stanno solo a significare che in questo identificativo è contenuta una funzione da eseguire al click -->
+                <!-- se scriviamo esattamente event all'interno delle parentesi tonde, allora riceveremo un event object nella nostra funzione -->
+                <!-- possiamo usare l'event object per ricavare informazioni aggiuntive sul nodo, sul suo posizionamento, e i suoi figli/genitori -->
+            </li>
+            <li>Inserimento tramite proprietà del nodo dell'elemento: <button id="second-btn">button click2</button>
+            </li>
+            <li>Inserimento tramite .addEventListener() del nodo dell'elemento: <button id="third-btn">button
+                    click3</button>
+            </li>
+        </ol>
+    </main>
+
+    <button onclick="handleButtonClickFromAttribute(event)">button click4</button>
+    <button id="fifth-btn">button click5</button>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
