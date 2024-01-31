@@ -26,9 +26,12 @@
             <textarea type="text" id="description" placeholder="Inserisci una descrizione" required></textarea>
         </div>
         <button type="submit">Invia</button>
+        <button type="button" onclick="confirmAndReset(event)">resetta i campi</button>
     </form>
 
     <div id="cards-container"></div>
+
+    <input type="text" id="lone-input" placeholder="inseristi testo qui">
 
     <script src="./js/generateCards.js"></script>
 </body>
