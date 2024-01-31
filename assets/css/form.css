@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+}
+input,
+textarea {
+  min-width: 260px;
+}
+form {
+  width: max-content;
+  margin-inline: auto;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
